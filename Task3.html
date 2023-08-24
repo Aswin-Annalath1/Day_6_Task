@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Write a “person” class to hold all the details.
+
+        class person{
+            constructor(name,age,address,phno,email,AdID){
+                this.name=name,
+                this.age=age,
+                this.address=address,
+                this.phno=phno,
+                this.email=email,
+                this.AdID=AdID
+            }
+            getdetails(){
+                console.log(`The name is ${this.name} and age is ${this.age}.The Address is ${this.address} and phone number is ${this.phno} and email is ${this.email} .The adhar ID is ${this.AdID}. `)
+            }
+        }
+        var person1=new person("ash","08","kannadi","9238","qwer@","1234")
+        var person2=new person("ash1","38","kanadi","92738","qvfr@","1834")
+        var person3=new person("ash2","28","kannai","9738","qgvtr@","1734")
+        person1.getdetails()
+    </script>
+</body>
+</html>

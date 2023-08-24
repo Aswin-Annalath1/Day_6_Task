@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // write a class to calculate the uber price.
+
+        class uberPrice{
+            constructor(distance,perKmCharge){
+                this.distance=distance,
+                this.perKmCharge=perKmCharge
+            }
+            setUpdatedDistance(dist){
+                this.distance=dist
+            }
+            getCharge(){
+                return "Your Charge is "+(this.distance*this.perKmCharge)
+            }
+            
+        }
+        var client1=new uberPrice(20,5);
+        var client2=new uberPrice(30,5);client2.setUpdatedDistance(40)
+        var client3=new uberPrice(40,5);
+        console.log(client3.getCharge())
+    </script>
+    
+</body>
+</html>
